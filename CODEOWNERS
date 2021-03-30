@@ -1,0 +1,14 @@
+# This is an example CODEOWNERS file
+# You can learn more about how these files work in GitHub
+# repositories by going here 
+# https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @example-team will be requested for
+# review when someone opens a pull request.
+# Replace this with the name of the appropriate team for
+# your repository and uncomment the next line
+#*       @example-team
+

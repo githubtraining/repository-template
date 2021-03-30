@@ -1,0 +1,17 @@
+name: "Close stale issues"
+on:
+  repository_dispatch:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/stale@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'No updates in 7 days'
+        stale-pr-message: 'No updates in 7 days'
+        days-before-stale: 7
+        days-before-close: 60

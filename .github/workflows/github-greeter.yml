@@ -1,0 +1,12 @@
+name: "Issue Greeter"
+on: [issues]
+
+jobs:
+  issue-greeter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Greeter"
+        uses: anishanne/greeter@V1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          message: "![](https://cdn.anishdoes.dev/githublight.png)\nHey @{user}! Welcome to the **Greeter** repo on **Github**."

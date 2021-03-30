@@ -1,0 +1,19 @@
+name: LFS-warning
+
+on:
+  pull_request:
+    types: [assigned, opened, edited, reopened, synchronize, ready_for_review]
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  lfs-warning:
+
+    name: LFS Warning
+    runs-on: ubuntu-latest
+
+    steps:
+     - uses: actionsdesk/lfs-warning@v2.0
+       with:
+        token: ${{ secrets.GITHUB_TOKEN }} # Optional
+        filesizelimit: '10485760'
