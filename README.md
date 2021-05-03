@@ -1,3 +1,5 @@
+<!-- markdownlint-disable -->
+
 # GitHub Repository Template
 
 ## Background
